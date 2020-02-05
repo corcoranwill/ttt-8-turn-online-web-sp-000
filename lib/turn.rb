@@ -1,8 +1,10 @@
 
 # MAIN METHOD
-def turn
-  move()
-  display_board(index)
+def turn(board, index)
+  if valid_move?(board, index) == true
+    move(board, index)
+    display_board(board)
+  end
 end
 
 
@@ -32,11 +34,11 @@ def position_taken?(board, index)
 end
 
 
-def move(array, index, value = "X")
-  update_array_at_with(array, index, value)
+def move(board, index, value = "X")
+  update_array_at_with(board, index, value)
 end
 
-def update_array_at_with(array, index, value)
+def update_array_at_with(board, index, value)
   array[index] = value
 end
 
