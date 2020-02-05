@@ -5,10 +5,7 @@ def turn(board, index)
   puts "Where would you like to move?"
   input = gets.strip
   board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-
   index = input_to_index(input)
-  turn(board, index)
-  
 
   if valid_move?(board, index) == true
     move(board, index)
