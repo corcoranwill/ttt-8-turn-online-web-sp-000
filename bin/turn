@@ -5,7 +5,6 @@ require_relative '../lib/turn.rb'
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to move?"
 input = gets.strip.to_i
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "] 
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-index = input_to_index(index) 
-
+index = input_to_index(index)
