@@ -8,5 +8,4 @@ input = gets.strip.to_i
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 index = input_to_index(input)
-move(board, index)
-display_board(board)
+turn(board, index)
