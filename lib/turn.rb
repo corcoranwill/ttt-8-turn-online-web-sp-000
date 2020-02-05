@@ -1,6 +1,15 @@
 
 # MAIN METHOD
 def turn(board, index)
+  puts "Welcome to Tic Tac Toe!"
+  puts "Where would you like to move?"
+  input = gets.strip
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+  index = input_to_index(input)
+  turn(board, index)
+  
+
   if valid_move?(board, index) == true
     move(board, index)
     display_board(board)
