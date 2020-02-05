@@ -1,4 +1,5 @@
 
+# MAIN METHOD
 def turn
   ask_for_input()
   input = gets_input()
@@ -9,40 +10,26 @@ def turn
   end
 end
 
-# ask for input
-# get input
-# convert input to index
-# if index is valid
-#   make the move for index
-#   show the board
-# else
-#   ask for input again until you get a valid input
-# end
 
+# HELPER METHODS
 
-
-# display_board
-# input_to_index
-# valid_move?
-# move
-# turn
-
-
+# ask user for input
 def ask_for_input
   puts "Hello, select a location for your move, 1-9"
 end
 
+# get user input
 def gets_input
   input = gets.strip.to_i
 end
 
+# convert input to index
 def input_to_index(input)
     index -= input
 end
 
-
+# determine if move provided is a valid board location
 def valid_move?(board, index)
-  #if submitted index is present on the game board AND not already filled then return true
   if index >= 0 && index <= 8
     valid_position = position_taken?(board, index)
     if valid_position == false
@@ -51,8 +38,7 @@ def valid_move?(board, index)
   end
 end
 
-# re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-
+# determine if the position is taken
 def position_taken?(board, index)
   if board[index] == " "
     false
@@ -63,4 +49,16 @@ def position_taken?(board, index)
   elsif board[index] == "X" || "O"
     true
   end
+end
+
+
+def move(board, index, value = "X")
+
+end
+
+
+
+# display the board
+def display_board(board)
+  #print out the current state of the board for the user
 end
