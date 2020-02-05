@@ -39,7 +39,7 @@ def move(board, index, value = "X")
 end
 
 def update_array_at_with(board, index, value)
-  array[index] = value
+  board[index] = value
 end
 
 
