@@ -1,13 +1,8 @@
 
 # MAIN METHOD
 def turn
-  ask_for_input()
-  input = gets_input()
-  index = input_to_index()
-  if index <= 8
-    move()
-    display_board(index)
-  end
+  move()
+  display_board(index)
 end
 
 
