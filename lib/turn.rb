@@ -1,8 +1,7 @@
 
 # MAIN METHOD
 def turn(board, index)
-  puts "Welcome to Tic Tac Toe!"
-  puts "Where would you like to move?"
+  puts "Please enter 1-9:"
   input = gets.strip
   board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   index = input_to_index(input)
