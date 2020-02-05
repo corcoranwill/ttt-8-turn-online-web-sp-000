@@ -21,7 +21,7 @@ def valid_move?(board, index)
     if valid_position == false
       true
     end
-    puts "Please enter 1-9:"
+    # puts "Please enter 1-9:"
   end
 end
 
