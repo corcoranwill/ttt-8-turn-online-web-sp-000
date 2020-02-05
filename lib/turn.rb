@@ -13,20 +13,7 @@ end
 
 # HELPER METHODS
 
-# ask user for input
-def ask_for_input
-  puts "Hello, select a location for your move, 1-9"
-end
 
-# get user input
-def gets_input
-  input = gets.strip.to_i
-end
-
-# convert input to index
-def input_to_index(input)
-    index -= input
-end
 
 # determine if move provided is a valid board location
 def valid_move?(board, index)
@@ -65,4 +52,11 @@ def display_board(board)
   puts " #{board[3]} " + "|" + " #{board[4]} " + "|" + " #{board[5]} "
   puts "-----------"
   puts " #{board[6]} " + "|" + " #{board[7]} " + "|" + " #{board[8]} "
+end
+
+
+
+# convert input to index
+def input_to_index(input)
+    index -= input
 end
