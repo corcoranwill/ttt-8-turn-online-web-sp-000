@@ -56,6 +56,6 @@ end
 
 # convert input to index
 def input_to_index(input)
-    integer = input.to_i
-    index -= integer
+  input = input.to_i
+  index = input-1
 end
